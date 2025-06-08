@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang }}">
+{% include head.html %} {# Sisipkan bagian <head> dari file _includes/head.html #}
+<body>
+    {% include header.html %} {# Sisipkan header/navigasi #}
+    <main class="content">
+        {{ content }} {# Ini akan menampung konten dari halaman/postingan #}
+    </main>
+    {% include footer.html %} {# Sisipkan footer #}
+</body>
+</html>
