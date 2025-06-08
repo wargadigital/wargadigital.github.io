@@ -1,0 +1,43 @@
+# Pengaturan Situs Umum
+title: "Blog Profesional Wargadigital"
+description: "Situs pribadi dan blog kode saya yang profesional."
+url: "https://wargadigital.github.io" # Ganti dengan URL GitHub Pages kamu
+baseurl: "" # Kosongkan untuk situs pengguna/organisasi (username.github.io)
+lang: id # Bahasa situs
+timezone: Asia/Jakarta # Zona waktu kamu (misal: Asia/Jakarta, America/New_York)
+
+# Informasi Author (Bisa Disesuaikan)
+author:
+  name: Wargadigital
+  email: your.email@example.com # Ganti dengan email kamu
+  twitter: your_twitter_handle # Opsional
+
+# Pengaturan Build Jekyll
+markdown: kramdown # Mesin Markdown yang digunakan
+highlighter: rouge # Untuk syntax highlighting kode
+kramdown:
+  syntax_highlighter_opts:
+    guess_lang: true # Otomatis mendeteksi bahasa kode
+    css_class: 'highlight' # Kelas CSS untuk blok kode
+
+# Plugin Jekyll (Aktifkan untuk fitur tambahan)
+plugins:
+  - jekyll-feed       # Untuk RSS feed blog
+  - jekyll-seo-tag    # Untuk meta tag SEO otomatis
+  - jekyll-sitemap    # Untuk membuat sitemap.xml
+
+# Default untuk Postingan (Agar tidak perlu menulis layout berulang kali)
+defaults:
+  - scope:
+      path: "_posts"
+    values:
+      layout: "post"
+      author: "Wargadigital" # Author default untuk postingan
+
+# Exclude files from the build (File yang tidak perlu diproses Jekyll)
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+  
